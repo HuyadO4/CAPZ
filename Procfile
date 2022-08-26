@@ -1,0 +1,1 @@
+web: gunicorn capz.wsgi --log-file -

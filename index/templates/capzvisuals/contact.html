@@ -1,0 +1,61 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'capzvisuals\css\ctct.css' %}">
+<link rel="stylesheet" href="{% static 'capzvisuals\css\index.css' %}">
+<div class="navbar">
+    <div class="container nav-container">
+        <div class="nav flex">
+            <a href="/" class="logo">
+                <img
+                    src="static\capzvisuals\image\web_images\CAPZVISUALS WHITE.png"
+                    alt="Capz Visuals"
+                    class="img"
+                />
+            </a>
+            <ul>
+                <li><a href="/" class="nav-home">Home</a></li>
+  <li><a href="{% url 'services' %}" class="nav-services">Services</a></li>
+                <li><a href="{% url 'about' %}" class="nav-about">About</a></li>
+                <li><a href="{% url 'contact' %}" class="nav-contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section class="form-section">
+    <div class="container img-plc backdrop">
+        <h2>Capz Visuals</h2>
+        <form action="" class="form-controll">
+            <label for="name">Name <br /></label>
+            <input type="text" id="name" class="form-item-size" />
+
+            <label for="email"
+                >Email
+                <br />
+            </label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-item-size"
+                placeholder="myemail@gmail.com"
+            />
+
+            <label for="phone-number">Phone Number <br /></label>
+            <input
+                type="text"
+                id="phone-number"
+                class="form-item-size"
+                placeholder="+234"
+                value="+234"
+            />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+    <footer>
+    <img src="static\capzvisuals\image\web_images\CAPZVISUALS WHITE.png" alt="Capz Visuals" class="img" />
+    <h3>Capz-visuals</h3>
+    <p>copyright 2022 @capzvisuals</p>
+</footer>
+</html>
