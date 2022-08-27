@@ -1,1 +1,1 @@
-web: gunicorn capz.wsgi --log-file -
+web: gunicorn Capzvisuals.wsgi --log-file -
